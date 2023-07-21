@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></SCript>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="nav-item">
+                    <img src="" class="">
+                    <ul id="sidemenu">
+                        <li><a href="#header" onclick="closemenu()">Home</a></li>
+                        <li><a href="#about" onclick="closemenu()">About</a></li>
+                        <li><a href="#services" onclick="closemenu()">Services</a></li>
+                        <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                        <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <div class="header-items">
+                    <p>Front-end Developer</p>
+                    <h1>Hi, I'm KARRI VENKAT KISHORE</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------about------------>
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/my pic3.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>My name is KARRI VENKAT KISHORE.</p>
+                        <p>I'm a Web Developer.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')"></p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UX/UI</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/ios apps</li>
+                            </ul>
+                        </div>
+                 <!---------       <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2021 - Current</span><br>UX/UI Design Training at ET Institute</li>
+                                <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                                <li><span>2017 - 2019</span><br>UI/UX Design Executive at coin Digital Ltd.</li>
+                            </ul>
+                        </div> -->
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2021-2024</span><br>B.Tech from VIET Visakhapatanam.</li>
+                                <li><span>2020</span><br>Diploma from Gonna Institute Visakhapatanam.</li>
+                                <li><span>2017</span><br>SSC from AVK HIGH SCHOOL Visakhapatanam.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating website.
+                        It encompasses several different aspects, including 
+                        webpage layout, content production, and graphic design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> UX design encompasses all the experiences a person 
+                        has with a product or service, from beginning to end, 
+                        while UI design is specific to the individual means by 
+                        which people interact with a product or service.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>APP Design</h2>
+                    <p>App design is a combination of UI and UX design to build 
+                        out a usable piece of software. Modern users don’t have 
+                        patience for apps that are confusing to use. Ideal mobile app 
+                        design is good-looking, functional, and straightforward all at the same time.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------portfolio------->
+    <div id="portfolio">
+        <div class="mycontainer">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>venkatkishore939@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9393568880</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://Linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ venkatkishore </i> 2023</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
